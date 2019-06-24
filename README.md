@@ -23,14 +23,18 @@ Feel free to use any virtual environment manager. If you do, you will need to:
 
 The only required package is Django
 
+This boilerplate does not use any development packages but if you
+want to, use the following command:
 
-### Packages (for development only)
+```bash
+pipenv install --dev <name-of-your-package>
+```
 
+Some great development packqges:
 - django-debug-toolbar -> adds a debuging toolbar to the Browser
 - django-extensions -> various utilities
 - flake8 -> linter
 - black -> code formatter
-- pyperclip -> clipboard utility package (used by the key_generator command)
 
 ### Clone or fork the repo
 
@@ -43,18 +47,7 @@ Note: If you are using Pipenv do not use `pip install`, use `pipenv install`
 - execute `pipenv shell` to create the virtual environment
 - execute `pipenv install` to install the production's packages
 
-This boilerplate does not use any development packages but if you
-want to install some packages used in development only, use the following command:
 
-```bash
-pipenv install --dev name-of-your-package
-```
-
-Some great development packqges:
-- django-debug-toolbar -> adds a debuging toolbar to the Browser
-- django-extensions -> various utilities
-- flake8 -> linter
-- black -> code formatter
 
 ### 2- Environment variables
 
