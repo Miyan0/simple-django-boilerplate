@@ -19,6 +19,20 @@ Feel free to use any virtual environment manager. If you do, you will need to:
 - install Django (pip install Django)
 - use some way (Ex: python-dotenv) to load environment variables.
 
+### Misc files
+
+`.editorconfig`
+
+Edit or remove this if you don't use [Editor config](https://editorconfig.org/)
+
+`.eslintrc`
+
+Edit or remove this if you don't use [ESLint](https://eslint.org/)
+
+`.gitattribute`
+
+Edit or remove this if you don't use [Git Documentation](https://www.git-scm.com/docs/gitattributes)
+
 ### Packages
 
 The only required package is Django
@@ -30,7 +44,7 @@ want to, use the following command:
 pipenv install --dev <name-of-your-package>
 ```
 
-Some great development packqges:
+Some great development packages:
 - django-debug-toolbar -> adds a debuging toolbar to the Browser
 - django-extensions -> various utilities
 - flake8 -> linter
@@ -84,8 +98,7 @@ This way, when using `Gunicorn` and `nginx` in production, you can tell `nginx` 
 
 ### 3- Running the project for the first time
 
-The default database is Sqlite. If you want to use Postgres, make sure you
-create your database first.
+The default database is Sqlite and you don't need to do anything to use it. If you want to use Postgres though, make sure you create your database first.
 
 Create a new Postgres database:
 
