@@ -1,7 +1,6 @@
 # Starting template for Django projects
 
-Github page [django-starting-template](https://github.com/Miyan0/django-starting-template)
-Some directory structure based on [mz_django_starter](https://github.com/Miyan0/mz_django_starter)
+Github page [simple-django-boilerplate](https://github.com/Miyan0/simple-django-boilerplate)
 
 __Note__
 
