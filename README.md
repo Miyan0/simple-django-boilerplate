@@ -1,8 +1,53 @@
-# Starting template for Django projects
+# Simple Django Boilerplate
+Home page [simple-django-boilerplate](https://github.com/Miyan0/simple-django-boilerplate)
 
-Github page [simple-django-boilerplate](https://github.com/Miyan0/simple-django-boilerplate)
+## Differences from Django Turorial
 
-__Note__
+### TLDR
+
+Principal differences from the Django tutorial for creating a new project
+
+- no nested project structure,
+- multiple settings files for development, staging, production,
+- custom user,
+- environment variables,
+- core app for management and other common tasks,
+- public folder for static_root and media folders,
+- default editorconfig, eslint, gitignore setting files
+
+---
+
+### Project structure
+
+If you follow the [tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/) for creating a new Django project using `django-admin startproject mysite` you'll end up with a structure like this:
+
+```
+mysite/
+    manage.py
+    mysite/
+        __init__.py
+        settings.py
+        urls.py
+        wsgi.py
+```
+
+I find having a folder `mysite` inside a folder `mysite` confusing. Sure, you can rename the outer one anything you want but I prefer avoiding unecessary nesting. In many tutorials around the web, you'll often find creating projects this way `django-admin startproject mysite .` (note the '.') which creates this structure:
+
+```
+manage.py
+mysite/
+    __init__.py
+    settings.py
+    urls.py
+    wsgi.py
+
+```
+
+This is the way this boilerplate was created. It's just that the project name is `config`.
+
+---
+### Usage
+
 
 This project assumes you have `pipenv` installed, if not:
 
